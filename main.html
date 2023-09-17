@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Recipe Book</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3040/3040052.png">
+</head>
+<body>
+    <header>
+        <h1>Recipe Book</h1>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+            </ul>
+        </nav>
+    </header>
+    <blockquote>
+    <h4><p><em>“A recipe has no soul. You as the cook must bring soul to the recipe.”</em></p></h4>
+        <cite>Thomas Keller</cite>
+      </blockquote>
+<section id="recipe_table">
+    <h2>Recipe List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Recipe Name</th>
+                <th>Category</th>
+                <th>Preparation Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Scrambled Eggs</td>
+                <td>Breakfast</td>
+                <td>10 minutes</td>
+            </tr>
+            <tr>
+                <td>Pancakes</td>
+                <td>Breakfast</td>
+                <td>30 minutes</td>
+            </tr>
+            <tr>
+                <td>Chicken Salad</td>
+                <td>Lunch</td>
+                <td>10 minutes</td>
+            </tr>
+            <tr>
+                <td>Veggie Wrap</td>
+                <td>Lunch</td>
+                <td>20 minutes</td>
+            </tr>
+            <tr>
+                <td>Spaghetti Bolognese</td>
+                <td>Dinner</td>
+                <td>40 minutes</td>
+            </tr>
+            <tr>
+                <td>Grilled Salmon</td>
+                <td>Dinner</td>
+                <td>30 minutes</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section id="recipe_of_the_week">
+        <div class="recipe_of_the_week">
+            <h1><em>Recipe of the week</em></h1><br />
+            <img src="carbonara.jpg" alt="Spaghett Carbonara"><br />
+            <h3>Spaghetti Carbonara</h3><br />
+            <p>A classic Italian pasta dish with eggs, cheese, and pancetta.</p><br />
+            <a href="https://www.bbcgoodfood.com/recipes/ultimate-spaghetti-carbonara-recipe" class="href">View Recipe</a>
+        </div>
+    </section>
+
+
+<section id="recipe_form">
+    <h3>Add a New Recipe</h3> <br />
+    <form action="submit_recipe.php" method="post">
+        <label for="recipe_name">Recipe Name:</label>
+        <input type="text" id="recipe_name" name="recipe_name" required>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="Breakfast">Breakfast</option>
+            <option value="Lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="Dessert">Dessert</option>
+        </select>
+
+        <label for="prep_time">Preparation Time (minutes):</label>
+        <input type="number" id="prep_time" name="prep_time" required>
+
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="4" required></textarea>
+
+        <button type="submit"><strong>Submit Recipe</strong></button>
+    </form>
+</section>
+
+<div class="clear"></div>
+
+
+    <footer>
+        <p>&copy; 2023 Recipe Book</p>
+    </footer>
+</body>
+</html>
+
